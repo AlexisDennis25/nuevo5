@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo siento</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f3f3;
+            text-align: center;
+        }
+
+        .barra-tareas {
+            background-color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar > li {
+            position: relative;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #444;
+        }
+
+        .menu-desplegable {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 999;
+            min-width: 160px;
+        }
+
+        .menu-desplegable li a {
+            padding: 12px 16px;
+        }
+
+        .navbar li:hover .menu-desplegable {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .contenido {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #c0392b;
+        }
+
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .latido {
+            width: 200px;
+            animation: palpitar 1s infinite;
+        }
+
+        @keyframes palpitar {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+
+        footer img {
+            max-height: 100px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            footer img {
+                max-height: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="barra-tareas">
+        <ul class="navbar">
+            <li class="con-submenu">
+                <a href="#inicio">🏠 <strong>PER</strong></a>
+                <ul class="menu-desplegable">
+                    <li><a href="#">Perdóname</a></li>
+                    <li><a href="#">Sí</a></li>
+                    <li><a href="#">Por favor</a></li>
+                </ul>
+            </li>
+            <li class="con-submenu">
+                <a href="#acerca">ℹ️ <strong>DO</strong></a>
+                <ul class="menu-desplegable">
+                    <li><a href="#">Lamento</a></li>
+                    <li><a href="#">El</a></li>
+                    <li><a href="#">Molestarme</a></li>
+                </ul>
+            </li>
+            <li class="con-submenu">
+                <a href="#servicios">💼 <strong>NA</strong></a>
+                <ul class="menu-desplegable">
+                    <li><a href="#">Pido</a></li>
+                    <li><a href="#">Perdón</a></li>
+                    <li><a href="#">😭😭</a></li>
+                </ul>
+            </li>
+            <li class="con-submenu">
+                <a href="#contacto">🧟 <strong>ME</strong></a>
+                <ul class="menu-desplegable">
+                    <li><a href="#">Sigue</a></li>
+                    <li><a href="#">Siendo</a></li>
+                    <li><a href="#">Mi amiga</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <h1>Perdóname</h1>
+        <p>
+            Sé que he cometido un error y me duele haberte hecho sentir mal.
+            Solo quiero que sepas que lo siento de verdad, desde el fondo de mi corazón.
+            Espero poder enmendarlo con el tiempo y recuperar tu confianza.
+        </p>
+        <a href="index4.html">
+            <img src="imgs/R.jpeg" class="latido" alt="Corazón">
+        </a>
+        <br>
+        <button onclick="alert('Gracias por leerlo. ♥')">Aceptar mis disculpas</button>
+    </div>
+
+    <footer>
+        <img src="imgs/perdon003-removebg-preview.png" alt="Amistad">
+        <img src="imgs/perdon001-removebg-preview.png" alt="Amistad">
+        <img src="imgs/perdon001-removebg-preview.png" alt="Amistad">
+        <img src="imgs/perdon002-removebg-preview.png" alt="Amistad">
+    </footer>
+</body>
+
+</html>
