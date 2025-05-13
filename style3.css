@@ -1,0 +1,57 @@
+footer {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+     mix-blend-mode: multiply;
+
+    img {
+        max-height: 128px;
+        
+       
+    }
+}
+                .latido {
+     
+   mix-blend-mode: multiply;
+} 
+
+/*body {
+            background-image: url(imgs/perdon\ 004.png); /* Cambia 'fondo.jpg' por la ruta de tu imagen */
+            /* background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+            /* background-repeat: no-repeat; */
+            /* background-position: 0px;
+            background-position-y: 40px;
+            font-family: Arial, sans-serif; */
+            /* */
+        /* } */ 
+
+  
+
+.colorfuente {
+            background-color: #E2BAB0; /* Cambia este valor al color que desees */
+        }
+        
+                .latido {
+     
+   mix-blend-mode: multiply;
+   text-align: center;
+} 
+.abajo {
+    background: transparent;
+}
+
+.centrar01 {
+margin: 0;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; /* evita que el contenido toque los bordes en pantallas pequeñas */
+  box-sizing: border-box;
+}
+.centrar02 {
+
+    max-width: 600px;
+  width: 100%;
+  text-align: center;
+}

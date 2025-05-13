@@ -1,0 +1,28 @@
+.nubes {
+transform: translate(180%, -8px)
+}
+h1 {
+
+
+ transform: translate(40%, -320px)
+
+
+}
+
+.letra {
+
+   font-size: 34px;
+   font-weight: bold;
+   transform: translate(360%, -350px);
+    text-shadow:
+        -2px -2px 0 white,
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white;
+
+}
+h1 {
+
+    background-position: center;
+}
+
